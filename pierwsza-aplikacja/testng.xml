@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <listeners>
+  <listener class-name="testuj.listeners"></listener>
+  <listener class-name="resources.ExtentReporterNG"></listener>
+  </listeners>
+
+    <test name="Validating Homepage">
+    <classes>
+      <class name="testuj.validateHomepage"/>
+     </classes>
+   </test>
+   
+    <test name="Validation Register">
+    <classes>
+      <class name="testuj.validateRegister"/>
+     </classes> 
+   </test>
+
+
+  <test name="Validating User Login">
+    <classes>
+      <class name="testuj.validateLogin"/>
+     </classes>
+   </test>
+   
+    <test name="Validation User Account">
+    <classes>
+      <class name="testuj.validateAccount"/>
+     </classes> 
+   </test>
+   
+     <test name="Validation Search">
+    <classes>
+      <class name="testuj.validateSearch"/>
+     </classes> 
+   </test>
+   
+     <test name="Validation Order">
+    <classes>
+      <class name="testuj.validateOrder"/>
+     </classes> 
+   </test>
+      
+</suite> <!-- Suite -->
